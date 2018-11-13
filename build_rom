@@ -1,0 +1,4 @@
+#!/bin/sh
+#cp ../buildroot_apu3/output/images/bzImage ./
+./cbfstool apu3_v4.8.0.4.rom  remove -n fallback/payload
+./cbfstool apu3_v4.8.0.4.rom add-payload -n fallback/payload -f bzImage -C "console=tty0 console=ttyS0,115200n8"
