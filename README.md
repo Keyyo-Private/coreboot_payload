@@ -12,9 +12,11 @@ flashrom -p internal -w apu3_v4.8.0.4.rom
 
 To build the minimal system :
 
+```
 git clone https://github.com/Keyyo-Private/buildroot_apu3.git
 cd buildroot_apu3
 make apu3_defconfig
 make
+```
 
 The kernel is output/images/bzImage
